@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a90981c20e.js" crossorigin="anonymous"></script>
+    <!--font awesome plug-in -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font family -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="uniquifier">
+    <!-- font family class -->
+    <header id="home">
+        <nav>
+            <div class="navbar-logo">
+                <p aria-label="Logo">
+                    <span data-text="O">O</span>
+                </p>
+            </div>
+            <!-- logo present at the top of the navbar like a trademark -->
+            <ul class="navbar-list">
+                <li><a href="#home">
+                        <p>Home</p>
+                        <i class="fa-solid fa-house-user"></i>
+                    </a></li>
+                <li><a href="#about">
+                        <p>About</p>
+                        <i class="fa-solid fa-user "></i>
+                    </a></li>
+                <li><a href="#projects">
+                        <p>Projects</p>
+                        <i class="fa-solid fa-eye "></i>
+                    </a></li>
+                <li><a href="#resume">
+                        <p>Resume</p>
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a></li>
+                <li><a href="#contacts">
+                        <p>Contact</p>
+                        <i class="fa-solid fa-address-book "></i>
+                    </a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-logo">
+                <p aria-label="Logo">
+                    <span data-text="O">O</span>
+                </p>
+            </div>
+            <!-- hero-logo comes before of text box cause of hover effect i wanted to do,without this order for some reason i couldnt use any css selector to link sibling elements during hover effect,this way i can just use "+
+            ",also have revered the flex direction to have same effect as if i had text box first and there fore on left side of the page -->
+            <div class="text-box">
+                <h1>Hi,<br>
+                    I'm <div class="capital-logo">
+                        <p aria-label="Logo">
+                            <span data-text="O">O</span>
+                            <!-- logo present at the start of the Name in text-box -->
+                        </p>
+                    </div>to,<br>
+                    Web Developer</h1>
+                <input type="checkbox" id="welcome">
+                <label for="welcome" class="welcome-button">Welcome!
+                </label>
+            </div>
+        </section>
+    </header>
+    <section class="about" id="about">
+        <div class="grid">
+            <div class="content title">
+                <h2>I'm Oto<br>Passionate Newbie Programmer</h2>
+            </div>
+            <div class="content area-1">
+                <p class="primary">
+                    I'm interested in building things, but not in physical spaces. I Also like improving stuff, solving
+                    issues and creating useful tools or services. All of
+                    those
+                    interests are probably the reason of me spending most of the day <span>hitting</span> CTRL+s on
+                    keyboard,
+                    even though I know, AutoSave is on.
+                </p>
+                <p class="secondary">Hardest <span>hitting</span> 45-er! (more like 85-er..)</p>
+            </div>
+            <div class="interest">
+                <div class="main">Interest Detected:</div>
+                <div class="quiz">
+                    <ul>
+                        <li><input type="radio" id="incorrect1" name="answer">
+                            <label for="incorrect1">Architecture</label>
+                        </li>
+                        <li><input type="radio" id="correct1" name="answer">
+                            <label for="correct1">MMA</label>
+                        </li>
+                        <li><input type="radio" id="incorrect2" name="answer">
+                            <label for="incorrect2">DYI</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content area-2">
+                <p class="primary">
+                    I enjoy continuously learning, it has a same reason as adding micro plates every
+                    workout on lift that has no real value other than boosting my ego.
+                </p>
+                <p class="secondary">
+                    It's nice to know that you got better
+                    at something that day
+                </p>
+            </div>
+            <div class="interest ord">
+                <div class="main">Interest Detected:</div>
+                <div class="quiz">
+                    <ul>
+                        <li><input type="radio" id="correct2" name="answer">
+                            <label for="correct2">Lifting</label>
+                        </li>
+                        <li><input type="radio" id="incorrect3" name="answer">
+                            <label for="incorrect3">Literature</label>
+                        </li>
+                        <li><input type="radio" id="incorrect4" name="answer">
+                            <label for="incorrect4">Culinary</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content area-3">
+                <p class="primary">
+                    "<a href="#projects">Projects</a> are like sausages: it is better not to see them being made"
+                </p>
+                <p class="secondary">
+                    "Otto not Bismarck"
+                </p>
+            </div>
+            <div class="interest">
+                <div class="main">Interest Detected:</div>
+                <div class="quiz">
+                    <ul>
+                        <li><input type="radio" id="incorrect5" name="answer">
+                            <label for="incorrect5">Movies</label>
+                        </li>
+                        <li><input type="radio" id="correct3" name="answer">
+                            <label for="correct3">History</label>
+                        </li>
+                        <li><input type="radio" id="incorrect6" name="answer">
+                            <label for="incorrect6">Philosophy</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="title">
+            <h2>Projects</h2>
+        </div>
+        <div class="wrap-gallery">
+            <div class="slider-images">
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/Four-card-feature-section/" target="_blank"><img
+                            src="img/four-card.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/art-gallery-website/" target="_blank"><img
+                            src="img/art-gallery.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/Equalizer-landing-page-solution/" target="_blank"><img
+                            src="img/equalizer.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/nft-preview-card-component/" target="_blank"><img
+                            src="img/nft card.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/order-summary-component/" target="_blank"><img
+                            src="img/order sumamry.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/qr-code-component-main/" target="_blank"><img
+                            src="img/qr-code.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/skilled-elearning-landing-page/" target="_blank"><img
+                            src="img/skilled page.webp" alt="project" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/image-slider/" target="_blank"><img src="img/slider.png"
+                            alt="project" class="weirdo" /></a>
+                </div>
+                <div class="img">
+                    <a href="https://oto-gelashvili.github.io/typemaster-pre-launch-landing-page/" target="_blank"><img
+                            src="img/typemaster.webp" alt="project" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="resume">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <ul class="content">
+                    <li>Have finished 166th public school on golden medal.</li>
+                    <li>Currently studying In Free university of Tbilisi.
+                    </li>
+                    <li>Done a bootcamp in BitCamp and have been learning programming since on my own.</li>
+                </ul>
+                <div class="row">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4 class="title">Education</h4>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <ul class="content">
+                    <li>Workplace: British-Georgian Academy.</li>
+                    <li>Position: Swimming Coach.
+                    </li>
+                    <li>Time spent: 2023/03 to 2024/06.</li>
+                </ul>
+                <div class="row">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4 class="title">Work Experience</h4>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <ul class="content">
+                    <li>HTML5.</li>
+                    <li>CSS3.</li>
+                </ul>
+                <div class="row">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 class="title">Skills</h4>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <ul class="content">
+                    <li>Resilience.</li>
+                    <li>Critical thinking.</li>
+                    <li>Problem solving.</li>
+                    <li>Flexibility.</li>
+                    <li>Goal-setting.</li>
+                    <li>Emotional intelligence.</li>
+                    <li>Learning agility.</li>
+                </ul>
+                <div class="row">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h4 class="title">Soft Skills</h4>
+                </div>
+            </label>
+        </div>
+        <input type="checkbox" id="switch">
+        <label for="switch" class="switch-button">Flavor: life's signature touch.
+        </label>
+
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="contact-container">
+            <div class="contact">
+                <h5 class="first-text">Let's get in touch</h5>
+                <img src="img/undraw_programming_re_kg9v.svg" alt="programmer" class="image">
+                <div class="social-links">
+                    <span class="second-text">Connect with us: </span>
+                    <ul class="social-media">
+                        <li><a href="https://linkedin.com/in/oto-gelashvili" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Oto-Gelashvili" target="_blank"><i class="fa-brands fa-github"
+                                    target="_blank"></i></a></li>
+                        <!-- <li><a href="mailto:otarbasilevsi@gmail.com"><i class="fa-regular fa-envelope"
+                                    target="_blank"></i></a></li> -->
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=otarbasilevsi@gmail.com"
+                                target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="submit-form">
+                <h3 class="third-text stuff">Contact Me</h3>
+                <form action="#" method="post">
+                    <div class="input-box">
+                        <input type="text" class="input" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="" class="input" required id="message" cols="30" rows="10"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </form>
+                <input type="submit" value="Submit" class="btn" Submit>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

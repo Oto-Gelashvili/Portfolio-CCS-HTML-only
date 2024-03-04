@@ -1,0 +1,2 @@
+SO this is probably the last project in which I will only use HTML/CSS as I am going to start learning JS!
+This portfolio project was great practice of how to make website,how to design it,structure it and so on. I learn lots of things through making it and it will be easy it in my next projects. stylesheet is little messy, but as this was just a practice and I dont want to stay on CSS/HTML for whole my life I kinda rushed it on some days and didnt really stick to what I intended at the start,which was to use general variables for every variable/parameter.
